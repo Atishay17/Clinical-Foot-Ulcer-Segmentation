@@ -1,4 +1,9 @@
 # Clinical Foot Ulcer Segmentation
+![Python](https://img.shields.io/badge/Python-3.10+-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![TensorFlow](https://img.shields.io/badge/TensorFlow-2.x-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white)
+![Keras](https://img.shields.io/badge/Keras-Deep%20Learning-D00000?style=for-the-badge&logo=keras&logoColor=white)
+![Medical Imaging](https://img.shields.io/badge/Medical-Imaging-009688?style=for-the-badge)
+![Research](https://img.shields.io/badge/Status-Research-blue?style=for-the-badge)
 
 > Deep learning-based clinical image segmentation using multiple CNN-based U-Net architectures for accurate wound delineation and comparative performance evaluation.
 
@@ -44,6 +49,11 @@ Dataset split:
 - Testing: 15%
 
 ---
+### Workflow
+
+<p align="center">
+<img src="images/workflow.png" width="90%">
+</p>
 
 ## ⚙️ Methodology
 
@@ -69,20 +79,37 @@ Performance was evaluated using:
 - Davies–Bouldin Index
 
 ---
+## 📈 Performance Summary
+
+| Model | Dice | IoU |
+|------|------:|------:|
+| U-Net | 0.9390 | 0.8850 |
+| Double U-Net | 0.9751 | 0.9514 |
+| U²-Net | 0.9787 | 0.9583 |
+| VGG U-Net | 0.9787 | 0.9583 |
+| U-Net++ | 0.9733 | 0.9479 |
+| ResNet U-Net | **0.9875** | **0.9754** |
+| Dense U-Net | 0.9802 | 0.9612 |
+
+## Sample Segmentation Results
+
+<p align="center">
+<img src="images/results.png" width="95%">
+</p>
 
 ## 🚧 Repository Status
 
-The associated research manuscript is currently under peer review.
+This repository accompanies an ongoing research project.
 
-To protect the novelty of the research, the following components are currently private:
+To preserve the novelty of the work while the manuscript is under peer review, the following components remain private:
 
-- Training source code
-- Model implementations
-- Dataset preparation pipeline
-- Trained model weights
-- Experimental notebooks
+- Source code
+- Training pipeline
+- Model weights
+- Experiment notebooks
+- Dataset preparation scripts
 
-These materials will be released after publication or when permitted.
+These resources will be released after publication or when permitted.
 
 ---
 
